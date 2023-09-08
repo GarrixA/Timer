@@ -76,3 +76,162 @@ button {
     
    
 }
+
+/* Navigation */
+
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #646161; */
+    color: #ffff;
+   
+   top: 0;
+   background: #1c1c1ce3;
+   position: sticky;
+  
+    
+}
+
+.navbar > .logo
+{
+    display: flex;
+    margin: 15px;
+    align-items: center;
+  
+    
+    
+}
+
+.navbar > .logo > h2
+{
+    
+    margin-left: 15px;
+}
+
+.navbar > .logo > img
+{
+    max-width: 80px;
+    max-width: 80px;
+    border-radius: 50%;
+    border: 3px solid #646161;
+    box-shadow: 0 0 20px slid black;
+    
+}
+
+.nav_links > ul
+{
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    padding-right: 60px;
+    flex-grow: 2;
+    
+    
+}
+
+.nav_links li
+{
+    list-style-type: none;
+    font-size: 30px;
+
+}
+
+.nav_links li a
+{
+    text-decoration: none;
+    color: #ffff;
+    padding: 1rem;
+    display: block;
+    
+}
+
+.nav_links li a:hover
+{
+    background-color: #21497e7c;
+    border-radius: 6px;
+
+}
+
+/***** taggle-button*****/
+
+.toggle
+{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+ 
+.toggle .bar
+{
+    height: 4px;
+    width: 30px;
+    background-color: #ffff;
+    border-radius: 50px;
+    
+}
+
+
+
+.nav-bar > .left-side > div{
+margin-right: 10px;
+}
+
+/* respons */
+
+@media only screen and (max-width: 600px){
+    .navbar{
+        display: inline-block;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background-color: #1C1C1C
+    }
+
+    body{
+        height: 100vh;
+        
+    }
+
+    .logo{
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 3;
+        flex-basis: 100px;
+    }
+
+    .logo img
+    {
+        margin-right: 13px;
+    }
+
+    .logo h2
+    {
+        margin-right: 40px;
+    }
+
+    .toggle
+    {
+        display: flex;
+        margin-top: 40px;
+    }
+
+
+    .nav_links
+    {
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        margin-left: 10%;
+        flex-shrink: 3;
+        display: none;
+    }
+}
